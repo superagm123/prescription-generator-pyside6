@@ -26,11 +26,11 @@ class PDF(FPDF):
         self.cell(40)
         self.cell(20, 26, self.__patient.get_name(), new_x=NEW_X)
         self.cell(120)
-        self.cell(20, 26, "Age: ", new_x="LMARGIN")
+        self.cell(20, 26, "Age: ", new_x=NEW_X)
         self.cell(136)
         self.cell(20, 26, self.__patient.get_age(), new_x=NEW_X)
         self.cell(150)
-        self.cell(20, 26, "Gender:", new_x="LMARGIN")
+        self.cell(20, 26, "Gender:", new_x=NEW_X)
         self.cell(175)
         self.cell(20, 26, self.__patient.get_gender(), new_x=NEW_X)
 
